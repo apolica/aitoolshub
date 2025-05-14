@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Tools Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --text-dark: #f1f1f1;
+      --card-dark: #1f1f1f;
+      --hover-dark: #2a2a2a;
+      --highlight: #0078ff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-dark);
+      transition: all 0.3s ease;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--highlight);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      background: #1f1f1f;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px;
+      border-bottom: 1px solid #444;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: var(--highlight);
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: var(--hover-dark);
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: auto;
+      scroll-margin-top: 200px;
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+      font-size: 26px;
+    }
+
+    .tools-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .tool-card {
+      flex: 1 1 calc(33.33% - 20px);
+      min-width: 240px;
+      max-width: 300px;
+      background-color: var(--card-dark);
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .tool-card:hover {
+      transform: scale(1.05);
+      background-color: var(--hover-dark);
+    }
+
+    .tool-name {
+      color: var(--highlight);
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .tool-card {
+        flex: 1 1 100%;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AI Tools Hub</h1>
+    <p>Discover the best AI tools for every need</p>
+  </header>
+
+  <nav>
+    <a href="#popular">Popular</a>
+    <a href="#images">Images</a>
+    <a href="#music">Music</a>
+    <a href="#chat">Chat</a>
+    <a href="#writing">Writing</a>
+    <a href="#video">Video</a>
+    <a href="#coding">Coding</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#learning">Learning</a>
+    <a href="#data-analysis">Data Analysis</a>
+    <a href="#automation">Automation</a>
+  </nav>
+
+  <section id="popular">
+    <h2>🔥 Popular AI Tools</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://chat.openai.com', '_blank')">
+        <p class="tool-name">ChatGPT</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.midjourney.com', '_blank')">
+        <p class="tool-name">Midjourney</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.suno.ai', '_blank')">
+        <p class="tool-name">Suno AI</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="images">
+    <h2>🖼️ AI Tools for Images</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://openai.com/dall-e', '_blank')">
+        <p class="tool-name">DALL·E</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.craiyon.com', '_blank')">
+        <p class="tool-name">Craiyon</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.artbreeder.com', '_blank')">
+        <p class="tool-name">Artbreeder</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2>🎵 AI Tools for Music</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://www.suno.ai', '_blank')">
+        <p class="tool-name">Suno AI</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://aiva.ai', '_blank')">
+        <p class="tool-name">AIVA</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://soundraw.io', '_blank')">
+        <p class="tool-name">Soundraw</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chat">
+    <h2>💬 AI Tools for Chat</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://chat.openai.com', '_blank')">
+        <p class="tool-name">ChatGPT</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://claude.ai', '_blank')">
+        <p class="tool-name">Claude</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.perplexity.ai', '_blank')">
+        <p class="tool-name">Perplexity</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>✍️ AI Tools for Writing</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://www.jasper.ai', '_blank')">
+        <p class="tool-name">Jasper</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.copy.ai', '_blank')">
+        <p class="tool-name">Copy.ai</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://writesonic.com', '_blank')">
+        <p class="tool-name">Writesonic</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>📹 AI Tools for Video</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://www.runwayml.com', '_blank')">
+        <p class="tool-name">Runway ML</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://pictory.ai', '_blank')">
+        <p class="tool-name">Pictory</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.synthesia.io', '_blank')">
+        <p class="tool-name">Synthesia</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="coding">
+    <h2>👨‍💻 AI Tools for Coding</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://github.com/features/copilot', '_blank')">
+        <p class="tool-name">GitHub Copilot</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://replit.com', '_blank')">
+        <p class="tool-name">Replit AI</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://codium.ai', '_blank')">
+        <p class="tool-name">CodiumAI</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="presentations">
+    <h2>🖥️ AI Tools for Presentations</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://beautiful.ai', '_blank')">
+        <p class="tool-name">Beautiful AI</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.zoho.com/show.html', '_blank')">
+        <p class="tool-name">Zoho Show</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://designify.com', '_blank')">
+        <p class="tool-name">Designify</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2>📚 AI Tools for Learning</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://www.duolingo.com', '_blank')">
+        <p class="tool-name">Duolingo</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.khanacademy.org', '_blank')">
+        <p class="tool-name">Khan Academy</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.edx.org', '_blank')">
+        <p class="tool-name">edX</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="data-analysis">
+    <h2>📊 AI Tools for Data Analysis</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://www.google.com/sheets/about/', '_blank')">
+        <p class="tool-name">Google Sheets</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.tableau.com', '_blank')">
+        <p class="tool-name">Tableau</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.powerbi.com', '_blank')">
+        <p class="tool-name">Power BI</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="automation">
+    <h2>🤖 AI Tools for Automation</h2>
+    <div class="tools-grid">
+      <div class="tool-card" onclick="window.open('https://www.zapier.com', '_blank')">
+        <p class="tool-name">Zapier</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.ifttt.com', '_blank')">
+        <p class="tool-name">IFTTT</p>
+      </div>
+      <div class="tool-card" onclick="window.open('https://www.integromat.com', '_blank')">
+        <p class="tool-name">Integromat</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
